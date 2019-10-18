@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TrailService } from '../../trail.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-trail-log',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrailLogComponent implements OnInit {
 
-  constructor() { }
+  constructor( private socketService : TrailService) { }
 
   ngOnInit() {
+    console.log(this.socketService.getSocket());
   }
 
 }

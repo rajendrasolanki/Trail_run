@@ -18,6 +18,7 @@ export class TrailRunComponent implements OnInit {
 
   Connect(){
     this.socketService.setSocket('http://localhost:8080');
+    console.log(this.socketService.getSocket());
   }
   start(){
     this.socket = this.socketService.getSocket();
