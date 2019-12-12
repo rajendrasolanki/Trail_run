@@ -12,7 +12,7 @@ export class TrailLogComponent implements OnInit {
   constructor( private socketService : TrailService) { }
 
   ngOnInit() {
-    console.log(this.socketService.getSocket());
+    console.log( this.socketService.getSocket() );
   }
 
 }
